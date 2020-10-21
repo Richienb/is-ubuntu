@@ -1,6 +1,6 @@
 {
 	"name": "is-ubuntu",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Check if the process is running inside Ubuntu.",
 	"repository": "https://github.com/Richienb/is-ubuntu.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
