@@ -1,41 +1,21 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# is-ubuntu [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-ubuntu/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-ubuntu)
 
-My awesome module.
+Check if the process is running inside Ubuntu.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/is-ubuntu.png)](https://npmjs.com/package/is-ubuntu)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install is-ubuntu
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const isUbuntu = require("is-ubuntu")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+// When the process is running inside Ubuntu
+console.log(isUbuntu)
+//=> true
 ```
-
-## API
-
-### theModule(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.

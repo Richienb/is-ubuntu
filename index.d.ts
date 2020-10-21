@@ -1,15 +1,15 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Whether the process is running inside Ubuntu.
+
 @example
 ```
-const theModule = require("the-module")
+const isUbuntu = require("is-ubuntu")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+// When the process is running inside Ubuntu
+console.log(isUbuntu)
+//=> true
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare const isUbuntu: boolean
 
-export = theModule
+export = isUbuntu

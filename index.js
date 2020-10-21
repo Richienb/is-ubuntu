@@ -1,9 +1,17 @@
 "use strict"
+const fs = require("fs")
+const ini = require("ini")
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+const isUbuntu = () => {
+	if (process.platform !== "linux") {
+		return false
 	}
 
-	return `${input} & ${postfix}`
+	try {
+		return ini.parse(fs.readFileSync("/etc/lsb-release", "utf8")).DISTRIB_ID === "Ubuntu"
+	} catch {
+		return false
+	}
 }
+
+module.exports = isUbuntu()
